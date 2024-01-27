@@ -9,6 +9,7 @@ import contact from './pages/ContactPage'
 import singleproduct from './pages/SingleProductPage'
 import cart from './pages/CartPage'
 import Default from './pages/DefaultPage' 
+import LoginPage from './pages/LoginPage';
 
 import {Route, Switch} from 'react-router-dom'
 
@@ -35,6 +36,7 @@ class App extends Component {
           <Route path="/cart" component={cart} />
           <Route path="/products" exact component={Products} />
           <Route path="/products/:id" exact component={singleproduct} />
+          <Route path="/login" exact component={LoginPage}/>
           <Route component={Default} />
       </Switch>
 
